@@ -103,3 +103,11 @@ footer {
 section {
   text-align: center;
 }
+/* Center everything under h1 on pages like resume.html or skills.html */
+h1 + * {
+  text-align: center;
+}
+
+h1 + * + * {
+  text-align: center;
+}
