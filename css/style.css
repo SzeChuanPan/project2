@@ -99,3 +99,7 @@ footer {
   color: white;
   border-radius: 8px;
 }
+/* Center content in sections for index.html */
+section {
+  text-align: center;
+}
