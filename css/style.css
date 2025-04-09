@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* ===== Custom Local Font ===== */
+/* ===== Custom Fonts ===== */
 @font-face {
   font-family: 'BungeeSpice';
   src: url('../fonts/BungeeSpice-Regular.ttf') format('truetype');
@@ -8,6 +8,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'BungeeTint';
+  src: url('../fonts/BungeeTint-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ===== Base Reset ===== */
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +36,7 @@ ul {
 /* ===== Base Styles ===== */
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  background: linear-gradient(to right, #f5f7fa, #c3dfe0);
+  background-color: #fff5cc;
   color: #333;
   line-height: 1.6;
   padding: 1rem;
@@ -39,7 +47,7 @@ body > ul:first-of-type {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  background-color: #005f73;
+  background-color: #b80000;
   padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 8px;
@@ -52,44 +60,31 @@ body > ul:first-of-type a {
 }
 
 body > ul:first-of-type a:hover {
-  color: #ffd166;
+  color: #ffcc00;
 }
 
-/* ===== Headings ===== */
-h1 {
-  font-size: 2rem;
-  color: #023047;
-  margin-bottom: 1rem;
+/* ===== Headings (Use Custom Tint Font) ===== */
+h1, h2, h3 {
+  font-family: 'BungeeTint', 'Roboto', Arial, sans-serif;
+  color: #b80000;
   text-align: center;
 }
 
-h2 {
-  font-size: 1.5rem;
-  color: #023047;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-  color: #333;
-  margin-top: 1.2rem;
-}
-
-/* ===== Description Paragraphs (Custom Font) ===== */
+/* ===== Description Paragraphs (Use BungeeSpice) ===== */
 h1 + p,
 h2 + p {
   font-family: 'BungeeSpice', 'Roboto', Arial, sans-serif;
   font-weight: normal;
+  color: #ff8800;
 }
 
 /* ===== Section Styling ===== */
 section {
   margin-bottom: 2rem;
-  background-color: #ffffffcc;
+  background-color: #fff1e6;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -112,7 +107,7 @@ footer {
   text-align: center;
   margin-top: 3rem;
   padding: 1rem;
-  background-color: #005f73;
+  background-color: #b80000;
   color: white;
   border-radius: 8px;
 }
