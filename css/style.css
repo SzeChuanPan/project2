@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
   margin: 0;
@@ -18,7 +19,7 @@ ul {
 
 /* ===== Base Styles ===== */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background: linear-gradient(to right, #f5f7fa, #c3dfe0);
   color: #333;
   line-height: 1.6;
@@ -74,6 +75,7 @@ section {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 /* ===== Lists ===== */
@@ -99,15 +101,17 @@ footer {
   color: white;
   border-radius: 8px;
 }
-/* Center content in sections for index.html */
-section {
-  text-align: center;
-}
-/* Center everything under h1 on pages like resume.html or skills.html */
-h1 + * {
-  text-align: center;
+
+/* ===== Layouts ===== */
+.fluid-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-h1 + * + * {
-  text-align: center;
+.fixed-container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
 }
